@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Grow_android" />
+        <module name="Appium" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Grow_android" target="1.5" />
+      <module name="Appium" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
