@@ -21,12 +21,13 @@ public class Profile_page_Testcase extends ExtentReport {
      @BeforeTest
      public void beforeTest() throws MalformedURLException {
 
-          String apkpath="/home/plaban/Downloads/GrowFit-development-debug.apk";
+
+          String apkpath="GrowFit-development-debug.apk";
           File app=new File(apkpath);
 
           //setting up desired capability
           DesiredCapabilities caps = new DesiredCapabilities();
-          caps.setCapability("browserName", "");
+          //caps.setCapability("browserName", "");
           caps.setCapability("platform", "ANDROID");
           caps.setCapability("platformName","Android");
           caps.setCapability("platformVersion", "6.0.1");
@@ -35,7 +36,7 @@ public class Profile_page_Testcase extends ExtentReport {
           //caps.setCapability("--session-override",true);
           caps.setCapability("noReset","true");
           caps.setCapability("fullReset","false");
-          //caps.setCapability("appPackage", "com.health360.userapp.health360.staging-2");
+          //caps.setCapability("appPackage", "com.health360.userapp.health360.staging-1");
           caps.setCapability("appActivity","com.health360.userapp.health360.ui.splash.SplashActivity");
           caps.setCapability("appWaitActivity","com.health360.userapp.health360.ui.login.LoginInfoActivity");
           caps.setCapability("appWaitActivity","com.health360.userapp.health360.ui.dashboard.Dashboard");
